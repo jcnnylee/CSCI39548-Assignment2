@@ -35,6 +35,7 @@ checkbox.addEventListener("click", crossOffTask);
 let deleteButton = document.createElement("button");
 taskItem.appendChild(deleteButton);
 deleteButton.textContent = "X"; //delete button text (X)
+deleteButton.style.marginLeft = "5px"; 
 
 deleteButton.addEventListener("click", () => {
     taskItem.remove();
@@ -70,6 +71,7 @@ form.addEventListener("submit", (event) => {
   //delete button
   let deleteBtn = document.createElement("button");
   deleteBtn.textContent = "X";
+  deleteBtn.style.marginLeft = "5px";
   deleteBtn.addEventListener("click", () => taskItem.remove());
 
   //append checkbox, description, and button to div container
